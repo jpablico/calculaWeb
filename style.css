@@ -5,6 +5,7 @@
 body {
     padding: 0;
     margin: 0;
+    background-color: blanchedalmond;
     
 }
 .calc-grid {
@@ -22,7 +23,7 @@ body {
     outline: none;
     background-color: antiquewhite;
 }
-.calc-grid >button:hover {
+.calc-grid > button:hover {
     background-color: aqua;
 }
 .span-two {
@@ -35,8 +36,15 @@ body {
     align-items: flex-end;
     justify-content: space-around;
     flex-direction: column;
-    color: #FFFFFF;
     padding: 10px;
     word-wrap: break-word;
     word-break: break-all;
+}
+.output .prev-operand {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+}
+.output .cur-operand {
+    color: #FFFFFF;
+    font-size: 2.5rem;
 }
