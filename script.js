@@ -7,3 +7,9 @@ const prevOperandTextElement = document.querySelector('data-prev-operand');
 const curOperandTextElement = document.querySelector('data-cur-operand');
 
 const calculator = new Calculator(prevOperandTextElement, curOperandTextElement);
+
+class Calculator {
+    constructor(prevOperandTextElement, curOperandTextElement) {
+        
+    }
+}
