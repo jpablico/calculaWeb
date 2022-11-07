@@ -10,6 +10,28 @@ const calculator = new Calculator(prevOperandTextElement, curOperandTextElement)
 
 class Calculator {
     constructor(prevOperandTextElement, curOperandTextElement) {
-        
+        this.prevOperandTextElement = prevOperandTextElement;
+        this.curOperandTextElement = curOperandTextElement;
+        this.clear();
+    }
+    clear() {
+        this.currentOperand = '';
+        this.prevOperant = '';
+        this.operation = undefined;
+    }
+    delete() {
+
+    }
+    appendNumber(number) {
+
+    }
+    chooseOperation(operation) {
+
+    }
+    compute() {
+
+    }
+    updateDisplay() {
+
     }
 }
