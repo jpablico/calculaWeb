@@ -22,7 +22,6 @@ body {
     border: 1px solid #FFFFFF;
     outline: none;
     background-color: antiquewhite;
-    border-radius: 1rem;
 }
 .calc-grid > button:hover {
     background-color: aqua;

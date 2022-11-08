@@ -23,7 +23,8 @@ class Calculator {
 
     }
     appendNumber(number) {
-
+        if(number === '.' && this curOperandTextElement.includes('.')
+        this.currentOperand = this.currentOperand.toString() + number.toString();
     }
     chooseOperation(operation) {
 
@@ -32,6 +33,6 @@ class Calculator {
 
     }
     updateDisplay() {
-
+        this.curOperandTextElement.innerText = this.currentOperand;
     }
 }
