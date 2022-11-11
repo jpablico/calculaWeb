@@ -23,7 +23,7 @@ class Calculator {
 
     }
     appendNumber(number) {
-        if(number === '.' && this curOperandTextElement.includes('.')
+        if(number === '.' && this.curOperandTextElement.includes('.')
         this.currentOperand = this.currentOperand.toString() + number.toString();
     }
     chooseOperation(operation) {
