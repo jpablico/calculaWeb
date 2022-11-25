@@ -24,7 +24,7 @@ body {
     background-color: antiquewhite;
 }
 .calc-grid > button:hover {
-    background-color: aqua;
+    background-color: #FFFFFF;
 }
 .span-two {
     grid-column: span 2;
