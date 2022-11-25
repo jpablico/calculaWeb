@@ -14,14 +14,16 @@ body {
     min-height: 100vh;
     grid-template-columns: repeat(4, 6.25rem);
     grid-template-rows: minmax(7.5rem, auto) repeat(5, 6.25rem);
+    gap: .1rem;
 }
 .calc-body > button {
     cursor: pointer;
     font-size: 2rem;
-    border: 1px solid #FFFFFF;
+    
     outline: none;
-    background-color: #FFDADA;
-    color: #31326F;
+    background-color: #FFF5E4;
+    color: #FF9494;
+    border-radius: 5rem;
 }
 .calc-body > button:hover {
     background-color: #FFFFFF;
@@ -32,13 +34,15 @@ body {
 .display-unit {
     grid-column: 1 / -1;
     background-color: #FFC288;
+    border-radius: 5rem;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-around;
     flex-direction: column;
     padding: 10px;
     word-wrap: break-word;
     word-break: break-all;
+    border: 1rem #FF9494 solid;
 }
 .display-unit .du-one {
     color: #FF6701;
