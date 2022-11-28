@@ -36,3 +36,7 @@ class Calculator {
         this.curOperandTextElement.innerText = this.currentOperand;
     }
 }
+function addition(a,b) {
+    var c = a + b;
+    return c;
+}
