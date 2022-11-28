@@ -40,3 +40,15 @@ function addition(a,b) {
     var c = a + b;
     return c;
 }
+function subtraction(a, b) {
+    var c = a - b;
+    return c;
+}
+function multiplication(a, b) {
+    var c = a * b;
+    return c;
+}
+function division(a, b) {
+    var c = a / b;
+    return c;
+}
