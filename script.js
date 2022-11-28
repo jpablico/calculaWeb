@@ -22,3 +22,12 @@ function division(a, b) {
     var c = a / b;
     return c;
 }
+let integerOne = '';
+
+numberButtons.forEach(numberButtons => {
+    numberButtons.addEventListener('click', function() {
+        console.log('bop')
+        integerOne += numberButtons.textContent;
+        console.log(integerOne);
+    })
+});
