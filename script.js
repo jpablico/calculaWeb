@@ -13,8 +13,14 @@ let integerTwo = '';
 numberButtons.forEach(numberButtons => {
     numberButtons.addEventListener('click', function() {
         console.log('bop')
-        integerOne += numberButtons.textContent;
+        while(operator === '') {
+            integerOne += numberButtons.textContent;
+        }
+        else {
+            integerTwo +=numberButtons.textContent;
+        }
         console.log(integerOne);
+        console.log(integerTwo);
     })
 });
 operationButtons.forEach(operationButtons => {
