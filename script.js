@@ -6,6 +6,47 @@ const allClearButton = document.querySelectorAll('[data-all-clear]');
 const prevOperandTextElement = document.querySelector('data-prev-operand');
 const curOperandTextElement = document.querySelector('data-cur-operand');
 
+let operator = '';
+let integerOne = '';
+let integerTwo = '';
+
+numberButtons.forEach(numberButtons => {
+    numberButtons.addEventListener('click', function() {
+        console.log('bop')
+        integerOne += numberButtons.textContent;
+        console.log(integerOne);
+    })
+});
+operationButtons.forEach(operationButtons => {
+    operationButtons.addEventListener('click', function() {
+        operator = operationButtons;
+        console.log(operator);
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function addition(a,b) {
     var c = a + b;
     return c;
@@ -22,12 +63,3 @@ function division(a, b) {
     var c = a / b;
     return c;
 }
-let integerOne = '';
-
-numberButtons.forEach(numberButtons => {
-    numberButtons.addEventListener('click', function() {
-        console.log('bop')
-        integerOne += numberButtons.textContent;
-        console.log(integerOne);
-    })
-});
