@@ -34,9 +34,6 @@ function clear() {
     integerOne = '';
     integerTwo = '';
 };
-function displayUpdate() {
-    
-}
 
 
 
