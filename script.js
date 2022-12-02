@@ -31,11 +31,13 @@ operationButtons.forEach(operationButtons => {
         console.log(operator);
     });
 });
-function clear() {
-    operator = '';
-    integerOne = '';
-    integerTwo = '';
-};
+allClearButton.forEach(allClearButton => {
+    allClearButton.addEventListener('click', function() {
+        operator = '';
+        integerOne = '';
+        integerTwo = '';
+    })
+})
 
 
 
