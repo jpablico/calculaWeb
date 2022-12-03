@@ -6,6 +6,8 @@ const allClearButton = document.querySelectorAll('[data-all-clear]');
 const prevOperandTextElement = document.querySelector('data-prev-operand');
 const curOperandTextElement = document.querySelector('data-cur-operand');
 
+const display = document.getElementById('du-two');
+
 let operator = '';
 let integerOne = '';
 let integerTwo = '';
@@ -15,14 +17,14 @@ numberButtons.forEach(numberButtons => {
         console.log('bop')
         if(operator === '') {
             integerOne += numberButtons.textContent;
-            console.log("integer one " + integerOne);
+            console.log("integer one: " + integerOne);
+            display.textContent = integerOne;
         }
         else {
             integerTwo +=numberButtons.textContent;
             console.log("integer two " + integerTwo);
         }
         console.log(integerOne);
-        console.log(integerTwo);
     })
 });
 operationButtons.forEach(operationButtons => {
