@@ -18,7 +18,7 @@ numberButtons.forEach(numberButtons => {
         if(operator === '') {
             integerOne += numberButtons.textContent;
             console.log("integer one: " + integerOne);
-            display.textContent = integerOne;
+            mainDisplay.textContent = integerOne;
         }
         else {
             integerTwo +=numberButtons.textContent;
