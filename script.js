@@ -3,14 +3,14 @@ const operationButtons = document.querySelectorAll('[data-operation]');
 const equalsButton = document.querySelectorAll('[data-equals]');
 const deleteButton = document.querySelectorAll('[data-delete]');
 const allClearButton = document.querySelectorAll('[data-all-clear]');
-const prevOperandTextElement = document.querySelector('data-prev-operand');
-const curOperandTextElement = document.querySelector('data-cur-operand');
-
-const display = document.getElementById('du-two');
-
+const mainDisplay = document.getElementById('main-display');
+const subDisplay = document.getElementById('sub-display')
+//Calculation variables 
 let operator = '';
 let integerOne = '';
 let integerTwo = '';
+//Display variables
+let displayInteger = '';
 
 numberButtons.forEach(numberButtons => {
     numberButtons.addEventListener('click', function() {
