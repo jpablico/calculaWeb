@@ -40,7 +40,11 @@ allClearButton.forEach(allClearButton => {
         integerTwo = '';
     })
 })
-
+function dispalyClear() {
+    operation = '';
+    integerOne = '';
+    integerTwo = '';
+}
 
 
 
