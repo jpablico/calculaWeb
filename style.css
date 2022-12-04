@@ -44,11 +44,11 @@ body {
     word-break: break-all;
     border: 1rem #FF9494 solid;
 }
-.display-unit .du-one {
+.display-unit #sub-display {
     color: #ffffff;
     font-size: 1.5rem;
 }
-.display-unit .du-two {
+.display-unit #main-display {
     color: #ffffff;
     font-size: 2.5rem;
 }
