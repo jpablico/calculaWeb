@@ -45,6 +45,12 @@ function displayClear() {
     integerOne = '';
     integerTwo = '';
 }
+function compute() {
+    switch(operator) {
+        case ÷:
+            return multiplication(integerOne, integerTwo)
+    }
+};
 
 
 
