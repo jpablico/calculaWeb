@@ -47,10 +47,21 @@ function displayClear() {
 }
 function compute() {
     switch(operator) {
-        case ÷:
-            return multiplication(integerOne, integerTwo)
+        case multiplication:
+            multiplication(integerOne, integerTwo)
+            break;
+        case division:
+            division(integerOne, integerTwo)
+            break;
+        case addition:
+            addition(integerOne, integerTwo)
+            break;
+        case subtraction:
+            subtraction(integerOne, integerTwo)
+            break;
     }
 };
+
 
 
 
