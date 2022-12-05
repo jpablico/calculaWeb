@@ -29,7 +29,8 @@ numberButtons.forEach(numberButtons => {
 });
 operationButtons.forEach(operationButtons => {
     operationButtons.addEventListener('click', function() {
-        operator = operationButtons;
+        operator = '';
+        operator += operationButtons.textContent;
         console.log(operator);
     });
 });
