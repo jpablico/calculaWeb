@@ -16,6 +16,22 @@ let operatorCh ='';
 
 numberButtons.forEach(numberButtons => {
     numberButtons.addEventListener('click', function() {
+        if(operator === '') {
+            integerOne += numberButtons.textContent;
+            displayIntegerOne = Number.integerOne;
+            displayUpdate();
+        } else {
+            integerTwo += numberButtons.textContent;
+            displayIntegerTwo = Number.integerTwo;
+            displayUpdate();
+        }
+    })
+})
+function displayUpdate() {
+    mainDisplay.textContent = `${displayIntegerOne} ${operator} ${displayIntegerTwo}`;
+}
+numberButtons.forEach(numberButtons => {
+    numberButtons.addEventListener('click', function() {
         console.log('bop')
         if(operator === '') {
             integerOne += numberButtons.textContent;
