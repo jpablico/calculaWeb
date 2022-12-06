@@ -24,6 +24,7 @@ numberButtons.forEach(numberButtons => {
         }
         else {
             integerTwo +=numberButtons.textContent;
+            mainDisplay.textContent = integerTwo;
             console.log("integer two " + integerTwo);
         }
     })
@@ -32,6 +33,7 @@ operationButtons.forEach(operationButtons => {
     operationButtons.addEventListener('click', function() {
         operator = '';
         operator += operationButtons.textContent;
+        mainDisplay.textContent += ' ' + operator + ' ';
         console.log(operator);
     });
 });
@@ -46,8 +48,10 @@ function displayClear() {
     operation = '';
     integerOne = '';
     integerTwo = '';
+    mainDisplay.textContent = '0';
 }
 function compute() {
+    console.log('bip');
     switch(operatorCh) {
         case multiplication:
             multiplication(integerOne, integerTwo)
