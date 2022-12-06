@@ -10,7 +10,9 @@ let operator = '';
 let integerOne = '';
 let integerTwo = '';
 //Display variables
-let displayInteger = '';
+let displayIntegerOne = '';
+let displayIntegerTwo = '';
+let operatorCh ='';
 
 numberButtons.forEach(numberButtons => {
     numberButtons.addEventListener('click', function() {
@@ -24,7 +26,6 @@ numberButtons.forEach(numberButtons => {
             integerTwo +=numberButtons.textContent;
             console.log("integer two " + integerTwo);
         }
-        console.log(integerOne);
     })
 });
 operationButtons.forEach(operationButtons => {
@@ -47,7 +48,7 @@ function displayClear() {
     integerTwo = '';
 }
 function compute() {
-    switch(operator) {
+    switch(operatorCh) {
         case multiplication:
             multiplication(integerOne, integerTwo)
             break;
