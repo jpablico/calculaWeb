@@ -18,18 +18,20 @@ numberButtons.forEach(numberButtons => {
     numberButtons.addEventListener('click', function() {
         if(operator === '') {
             integerOne += numberButtons.textContent;
-            displayIntegerOne = Number.integerOne;
+            displayIntegerOne = integerOne;
             displayUpdate();
         } else {
             integerTwo += numberButtons.textContent;
-            displayIntegerTwo = Number.integerTwo;
+            displayIntegerTwo = integerTwo;
             displayUpdate();
         }
     })
 })
 function displayUpdate() {
     mainDisplay.textContent = `${displayIntegerOne} ${operator} ${displayIntegerTwo}`;
+    console.log(mainDisplay);
 }
+/*
 numberButtons.forEach(numberButtons => {
     numberButtons.addEventListener('click', function() {
         console.log('bop')
@@ -45,6 +47,7 @@ numberButtons.forEach(numberButtons => {
         }
     })
 });
+*/
 operationButtons.forEach(operationButtons => {
     operationButtons.addEventListener('click', function() {
         operator = '';
