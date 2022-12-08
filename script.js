@@ -48,33 +48,23 @@ function displayClear() {
 function compute() {
     switch(operator) {
         case '*':
-            parseFloat(integerOne);
-            parseFloat(integerTwo);
             subDisplay.textContent = mainDisplay.textContent;
             mainDisplay.textContent = '';
             mainDisplay.textContent = multiplication(integerOne,integerTwo);
             break;
         case '÷':
-            parseFloat(integerOne);
-            parseFloat(integerTwo);
-            console.log(typeof integerOne)
-            console.log(typeof integerTwo)
+            
             subDisplay.textContent = mainDisplay.textContent;
             mainDisplay.textContent = '';
             mainDisplay.textContent = division(integerOne,integerTwo);
             break;
         case '+':
-            parseFloat(integerOne);
-            parseFloat(integerTwo);
-            console.log(typeof integerOne)
-            console.log(typeof integerTwo)
             subDisplay.textContent = mainDisplay.textContent;
             mainDisplay.textContent = '';
             mainDisplay.textContent = addition(integerOne,integerTwo);
             break;
         case '-':
-            parseFloat(integerOne);
-            parseFloat(integerTwo);
+            
             subDisplay.textContent = mainDisplay.textContent;
             mainDisplay.textContent = '';
             mainDisplay.textContent = subtraction(integerOne,integerTwo);
