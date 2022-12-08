@@ -9,26 +9,25 @@ const subDisplay = document.getElementById('sub-display')
 let operator = '';
 let integerOne = '';
 let integerTwo = '';
-//Display variables
-let displayIntegerOne = '';
-let displayIntegerTwo = '';
-let operatorCh ='';
 
 numberButtons.forEach(numberButtons => {
     numberButtons.addEventListener('click', function() {
         if(operator === '') {
             integerOne += numberButtons.textContent;
+            integerOne = parseFloat(integerOne);
+            console.log(typeof integerOne);
             displayIntegerOne = integerOne;
             displayUpdate();
         } else {
             integerTwo += numberButtons.textContent;
+            integerTwo = parseFloat(integerTwo);
             displayIntegerTwo = integerTwo;
             displayUpdate();
         }
     })
 })
 function displayUpdate() {
-    mainDisplay.textContent = `${displayIntegerOne} ${operator} ${displayIntegerTwo}`;
+    mainDisplay.textContent = `${integerOne} ${operator} ${integerTwo}`;
     console.log(mainDisplay);
 }
 /*
@@ -52,7 +51,8 @@ operationButtons.forEach(operationButtons => {
     operationButtons.addEventListener('click', function() {
         operator = '';
         operator += operationButtons.textContent;
-        mainDisplay.textContent += ' ' + operator + ' ';
+        displayUpdate();
+        //mainDisplay.textContent += ' ' + operator + ' ';
         console.log(operator);
     });
 });
@@ -72,16 +72,17 @@ function displayClear() {
 function compute() {
     console.log('bip');
     switch(operator) {
-        case multiplication:
+        case '*':
+            console.log('boom');
             multiplication(integerOne, integerTwo)
             break;
-        case division:
+        case '÷':
             division(integerOne, integerTwo)
             break;
-        case addition:
+        case '+':
             addition(integerOne, integerTwo)
             break;
-        case subtraction:
+        case '-':
             subtraction(integerOne, integerTwo)
             break;
     }
