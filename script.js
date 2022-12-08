@@ -14,14 +14,9 @@ numberButtons.forEach(numberButtons => {
     numberButtons.addEventListener('click', function() {
         if(operator === '') {
             integerOne += numberButtons.textContent;
-            integerOne = parseFloat(integerOne);
-            console.log(typeof integerOne);
-            displayIntegerOne = integerOne;
             displayUpdate();
         } else {
             integerTwo += numberButtons.textContent;
-            integerTwo = parseFloat(integerTwo);
-            displayIntegerTwo = integerTwo;
             displayUpdate();
         }
     })
@@ -35,7 +30,6 @@ operationButtons.forEach(operationButtons => {
         operator = '';
         operator += operationButtons.textContent;
         displayUpdate();
-        console.log(operator);
     });
 });
 allClearButton.forEach(allClearButton => {
@@ -52,25 +46,34 @@ function displayClear() {
     mainDisplay.textContent = '0';
 }
 function compute() {
-    console.log('int' + typeof integerOne)
-    console.log(integerOne)
-    console.log('bip');
     switch(operator) {
         case '*':
+            parseFloat(integerOne);
+            parseFloat(integerTwo);
             subDisplay.textContent = mainDisplay.textContent;
             mainDisplay.textContent = '';
             mainDisplay.textContent = multiplication(integerOne,integerTwo);
             break;
         case '÷':
-            console.log('bipp')
-            division(integerOne, integerTwo)
-            console.log(division)
+            parseFloat(integerOne);
+            parseFloat(integerTwo);
+            subDisplay.textContent = mainDisplay.textContent;
+            mainDisplay.textContent = '';
+            mainDisplay.textContent = division(integerOne,integerTwo);
             break;
         case '+':
-            addition(integerOne, integerTwo)
+            parseFloat(integerOne);
+            parseFloat(integerTwo);
+            subDisplay.textContent = mainDisplay.textContent;
+            mainDisplay.textContent = '';
+            mainDisplay.textContent = addition(integerOne,integerTwo);
             break;
         case '-':
-            subtraction(integerOne, integerTwo)
+            parseFloat(integerOne);
+            parseFloat(integerTwo);
+            subDisplay.textContent = mainDisplay.textContent;
+            mainDisplay.textContent = '';
+            mainDisplay.textContent = subtraction(integerOne,integerTwo);
             break;
     }
 };
