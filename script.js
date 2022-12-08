@@ -30,23 +30,6 @@ function displayUpdate() {
     mainDisplay.textContent = `${integerOne} ${operator} ${integerTwo}`;
     console.log(mainDisplay);
 }
-/*
-numberButtons.forEach(numberButtons => {
-    numberButtons.addEventListener('click', function() {
-        console.log('bop')
-        if(operator === '') {
-            integerOne += numberButtons.textContent;
-            console.log("integer one: " + integerOne);
-            mainDisplay.textContent = integerOne;
-        }
-        else {
-            integerTwo +=numberButtons.textContent;
-            mainDisplay.textContent = integerTwo;
-            console.log("integer two " + integerTwo);
-        }
-    })
-});
-*/
 operationButtons.forEach(operationButtons => {
     operationButtons.addEventListener('click', function() {
         operator = '';
