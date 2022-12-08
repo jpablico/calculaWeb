@@ -57,8 +57,7 @@ function compute() {
     console.log('bip');
     switch(operator) {
         case '*':
-            console.log('boom');
-            multiplication(integerOne, integerTwo);
+            subDisplay.textContent = mainDisplay.textContent;
             mainDisplay.textContent = '';
             mainDisplay.textContent = multiplication(integerOne,integerTwo);
             break;
