@@ -52,14 +52,20 @@ function displayClear() {
     mainDisplay.textContent = '0';
 }
 function compute() {
+    console.log('int' + typeof integerOne)
+    console.log(integerOne)
     console.log('bip');
     switch(operator) {
         case '*':
             console.log('boom');
-            multiplication(integerOne, integerTwo)
+            multiplication(integerOne, integerTwo);
+            mainDisplay.textContent = '';
+            mainDisplay.textContent = multiplication(integerOne,integerTwo);
             break;
         case '÷':
+            console.log('bipp')
             division(integerOne, integerTwo)
+            console.log(division)
             break;
         case '+':
             addition(integerOne, integerTwo)
