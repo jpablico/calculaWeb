@@ -35,7 +35,6 @@ operationButtons.forEach(operationButtons => {
         operator = '';
         operator += operationButtons.textContent;
         displayUpdate();
-        //mainDisplay.textContent += ' ' + operator + ' ';
         console.log(operator);
     });
 });
