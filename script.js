@@ -71,7 +71,7 @@ function displayClear() {
 }
 function compute() {
     console.log('bip');
-    switch(operatorCh) {
+    switch(operator) {
         case multiplication:
             multiplication(integerOne, integerTwo)
             break;
