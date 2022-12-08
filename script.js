@@ -57,6 +57,8 @@ function compute() {
         case '÷':
             parseFloat(integerOne);
             parseFloat(integerTwo);
+            console.log(typeof integerOne)
+            console.log(typeof integerTwo)
             subDisplay.textContent = mainDisplay.textContent;
             mainDisplay.textContent = '';
             mainDisplay.textContent = division(integerOne,integerTwo);
@@ -64,6 +66,8 @@ function compute() {
         case '+':
             parseFloat(integerOne);
             parseFloat(integerTwo);
+            console.log(typeof integerOne)
+            console.log(typeof integerTwo)
             subDisplay.textContent = mainDisplay.textContent;
             mainDisplay.textContent = '';
             mainDisplay.textContent = addition(integerOne,integerTwo);
