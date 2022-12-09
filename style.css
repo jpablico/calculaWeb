@@ -42,7 +42,7 @@ body {
     padding: 10px;
     word-wrap: break-word;
     word-break: break-all;
-    border: 1rem #FF9494 solid;
+    border: .4rem #FF9494 solid;
 }
 .display-unit > #sub-display {
     color: #ffffff;
