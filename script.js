@@ -53,23 +53,27 @@ function compute() {
             subDisplay.textContent = mainDisplay.textContent;
             mainDisplay.textContent = '';
             mainDisplay.textContent = multiplication(integerOne,integerTwo);
+            tempInt = mainDisplay.textContent;
             break;
         case '÷':
             
             subDisplay.textContent = mainDisplay.textContent;
             mainDisplay.textContent = '';
             mainDisplay.textContent = division(integerOne,integerTwo);
+            tempInt = mainDisplay.textContent;
             break;
         case '+':
             subDisplay.textContent = mainDisplay.textContent;
             mainDisplay.textContent = '';
             mainDisplay.textContent = addition(integerOne,integerTwo);
+            tempInt = mainDisplay.textContent;
             break;
         case '-':
             
             subDisplay.textContent = mainDisplay.textContent;
             mainDisplay.textContent = '';
             mainDisplay.textContent = subtraction(integerOne,integerTwo);
+            tempInt = mainDisplay.textContent;
             break;
     }
 };
