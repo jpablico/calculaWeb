@@ -44,6 +44,7 @@ function displayClear() {
     integerOne = '';
     integerTwo = '';
     mainDisplay.textContent = '0';
+    subDisplay.textContent = '';
 }
 function compute() {
     switch(operator) {
