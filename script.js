@@ -9,13 +9,15 @@ const subDisplay = document.getElementById('sub-display')
 let operator = '';
 let integerOne = '';
 let integerTwo = '';
+let tempInt = '';
 
 numberButtons.forEach(numberButtons => {
     numberButtons.addEventListener('click', function() {
-        if(operator === '' && subDisplay === '') {
+        if(operator === '' && tempInt === '') {
             integerOne += numberButtons.textContent;
             displayUpdate();
         } else {
+            tempInt = integerOne;
             integerTwo += numberButtons.textContent;
             displayUpdate();
         }
