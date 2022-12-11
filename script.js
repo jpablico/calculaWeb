@@ -12,7 +12,7 @@ let integerTwo = '';
 
 numberButtons.forEach(numberButtons => {
     numberButtons.addEventListener('click', function() {
-        if(operator === '') {
+        if(operator === '' && subDisplay === '') {
             integerOne += numberButtons.textContent;
             displayUpdate();
         } else {
@@ -44,7 +44,6 @@ function displayClear() {
     integerOne = '';
     integerTwo = '';
     mainDisplay.textContent = '0';
-    subDisplay.textContent = '';
 }
 function compute() {
     switch(operator) {
