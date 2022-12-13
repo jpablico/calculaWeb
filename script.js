@@ -14,18 +14,23 @@ let tempInt = '';
 numberButtons.forEach(numberButtons => {
     numberButtons.addEventListener('click', function() {
         if(operator === '') {
-            if(numberButtons === '.') {
+            if(numberButtons.textContent === '.') {
             integerOne += numberButtons.textContent;
             displayUpdate();
             } else {
                 integerOne += numberButtons.textContent;
-                parseFloat(integerOne);
                 displayUpdate();
+                integerOne = parseFloat(integerOne);
             }
         } else {
+            if(numberButtons.textContent === '.') {
             integerTwo += numberButtons.textContent;
-            parseFloat(integerTwo);
             displayUpdate();
+            } else {
+            integerTwo += numberButtons.textContent;
+            displayUpdate();
+            integerTwo = parseFloat(integerTwo);
+            }
         }
     })
 })
