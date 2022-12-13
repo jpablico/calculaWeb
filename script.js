@@ -67,7 +67,6 @@ function compute() {
             tempInt = mainDisplay.textContent;
             break;
         case '÷':
-            
             subDisplay.textContent = mainDisplay.textContent;
             mainDisplay.textContent = '';
             mainDisplay.textContent = division(integerOne,integerTwo);
