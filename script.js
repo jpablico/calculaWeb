@@ -13,12 +13,18 @@ let tempInt = '';
 
 numberButtons.forEach(numberButtons => {
     numberButtons.addEventListener('click', function() {
-        if(operator === '' && tempInt === '') {
+        if(operator === '') {
+            if(numberButtons === '.') {
             integerOne += numberButtons.textContent;
             displayUpdate();
+            } else {
+                integerOne += numberButtons.textContent;
+                parseFloat(integerOne);
+                displayUpdate();
+            }
         } else {
-            tempInt = integerOne;
             integerTwo += numberButtons.textContent;
+            parseFloat(integerTwo);
             displayUpdate();
         }
     })
