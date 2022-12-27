@@ -22,7 +22,7 @@ numberButtons.forEach(numberButtons => {
                 displayUpdate();
                 integerOne = parseFloat(integerOne);
             }
-        } else {
+        } else if(operator != '') {
             if(numberButtons.textContent === '.') {
             integerTwo += numberButtons.textContent;
             displayUpdate();
@@ -31,6 +31,8 @@ numberButtons.forEach(numberButtons => {
             displayUpdate();
             integerTwo = parseFloat(integerTwo);
             }
+        } else {
+            return;
         }
     })
 })
