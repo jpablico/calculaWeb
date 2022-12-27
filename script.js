@@ -64,7 +64,8 @@ function compute() {
             subDisplay.textContent = mainDisplay.textContent;
             mainDisplay.textContent = '';
             mainDisplay.textContent = multiplication(integerOne,integerTwo);
-            tempInt = mainDisplay.textContent;
+            tempInt = multiplication(integerOne,integerTwo).toFixed(2);
+            console.log(tempInt);
             break;
         case '÷':
             subDisplay.textContent = mainDisplay.textContent;
