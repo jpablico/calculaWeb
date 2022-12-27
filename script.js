@@ -13,7 +13,7 @@ let tempInt = '';
 
 numberButtons.forEach(numberButtons => {
     numberButtons.addEventListener('click', function() {
-        if(operator === '') {
+        if(operator === '' && tempInt === '') {
             if(numberButtons.textContent === '.') {
             integerOne += numberButtons.textContent;
             displayUpdate();
