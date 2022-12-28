@@ -60,6 +60,13 @@ function displayClear() {
     integerTwo = '';
     mainDisplay.textContent = '0';
 }
+function afterDecimal(num) {
+    if (Number.isInteger(num)) {
+      return 0;
+    }
+  
+    return num.toString().split('.')[1].length;
+  }
 function compute() {
     switch(operator) {
         case '*':
