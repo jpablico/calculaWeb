@@ -58,6 +58,7 @@ function displayClear() {
     operation = '';
     integerOne = '';
     integerTwo = '';
+    tempInt = '';
     mainDisplay.textContent = '0';
 }
 function afterDecimal(num) {
