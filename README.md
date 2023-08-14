@@ -2,7 +2,7 @@
 
 Live link: https://jpablico.github.io/calculaWeb/
 
-![alt text](https://github.com/jpablico/CalculaWeb/blob/main/assets/TopCalculator.png?raw=true)
+![Screenshot](TOPCalculator.png)
 
 A simple functioning calculator part of The Odin Project. 
 
